@@ -1,5 +1,5 @@
-{ cwrap, autoconf, perl, pythonPackages, buildPythonPackage, gnum4, fetchFromGitHub
-, cmake, ninja, conan, which, ... }:
+{ cwrap, autoconf, perl, pythonPackages, buildPythonPackage, gnum4
+, fetchFromGitHub, cmake, ninja, conan, which, ... }:
 
 buildPythonPackage rec {
   pname = "ecl";

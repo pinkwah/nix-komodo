@@ -31,6 +31,14 @@
         conan = callPackage ./komodo/conan.nix { };
         ecl = callPackage ./komodo/ecl.nix { };
         ert = callPackage ./komodo/ert.nix { };
+        xtgeo = callPackage ./komodo/xtgeo.nix { };
+        roffio = callPackage ./komodo/roffio.nix {};
+        ecl-data-io = callPackage ./komodo/ecl-data-io.nix {};
+        cloudevents = callPackage ./komodo/cloudevents.nix {};
+        SALib = callPackage ./komodo/SALib.nix {};
+        prefect = callPackage ./komodo/prefect.nix {};
+        ert-storage = callPackage ./komodo/ert-storage.nix {};
+        ies = callPackage ./komodo/ies.nix {};
         default = (nixpkgs.legacyPackages.x86_64-linux.python3.withPackages
           (_: [ ecl ert ]));
       };
