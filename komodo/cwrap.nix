@@ -13,9 +13,7 @@ buildPythonPackage rec {
 
   doCheck = false;
 
-  propagatedBuildInputs = with pythonPackages; [
-    six
-  ];
+  propagatedBuildInputs = with pythonPackages; [ six ];
 
   SETUPTOOLS_SCM_PRETEND_VERSION = version;
 }

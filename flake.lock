@@ -17,17 +17,18 @@
     },
     "nixpkgs-conan1": {
       "locked": {
-        "lastModified": 1688392541,
-        "narHash": "sha256-lHrKvEkCPTUO+7tPfjIcb7Trk6k31rz18vkyqmkeJfY=",
-        "owner": "NixOS",
+        "lastModified": 1677270931,
+        "narHash": "sha256-CWw5G9cheVxgJs+IfhAHwrAIKCgTA3hhbZelGbqj4rg=",
+        "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "ea4c80b39be4c09702b0cb3b42eab59e2ba4f24b",
+        "rev": "1e21c5807c4010c84c4628aab2af38a45c46c575",
         "type": "github"
       },
       "original": {
-        "id": "nixpkgs",
-        "ref": "nixos-22.11",
-        "type": "indirect"
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1e21c5807c4010c84c4628aab2af38a45c46c575",
+        "type": "github"
       }
     },
     "root": {

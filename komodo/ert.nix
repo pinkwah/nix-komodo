@@ -2,8 +2,8 @@
 , cmake, ninja, conan, which, ... }:
 
 buildPythonPackage rec {
-  pname = "ecl";
-  version = "2.14.3";
+  pname = "ert";
+  version = "5.0.4";
 
   src = fetchFromGitHub {
     owner = "equinor";
@@ -33,7 +33,7 @@ buildPythonPackage rec {
     chmod +x $CONAN_USER_HOME/conan
     export PATH=$CONAN_USER_HOME:$PATH
 
-    substituteInPlace CMakeLists.txt --replace missing all
+    substituteInPlace src/clib/CMakeLists.txt --replace missing all
   '';
 
   SETUPTOOLS_SCM_PRETEND_VERSION = version;
